@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Passions+Conflict&family=Peralta&family=Twinkle+Star&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+
+  <body>
+    <div class="heading"> 
+    <h1 style="font-size: 100px; font-family: 'Pacifico', cursive;">Face Recognition Web App</h1>
+    <br>
+    <hr style="background-color:rgba(0, 0, 0, 0.581); height: 2px; border: none;">
+    <br>
+    <h1 id="description">This model is trained to identify:
+      <br>
+      <h3 class="names">Myself</h3>
+      <br>
+      <h3 class="names">My Mother</h3>
+      <br>
+      <h3 class="names">My Father</h3>
+      <br>
+      <h3 class="names">My Sister</h3>
+      <br>
+    </h1>
+  </div> 
+    <center>
+     <br>
+     <h2 class="boxes_text">Webcam View</h2>
+     <div id="camera" class="boxes"></div>
+     <br>
+     <br>
+     <br>
+     <h2 class="boxes_text">Photo Taken</h2>
+     <div id="result" class="boxes"></div>
+     <br>
+     <br>
+     <div class="results">
+      <h1 id="result_object_name">The person identified is:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+      <h1 id="result_object_accuracy">Accuracy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     </div>
+     <br>
+     <br>
+     <button id="button1" onclick="takeImage()">Take Image</button>
+     <br>
+     <br>
+     <button id="button2" onclick="checkImage()">Identify Image</button>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    </center>
+    <div class="copyright_footer">
+      Devoloped by - Advik Aggarwal
+     </div>
+<script src="main.js"></script>
+
+  </body>
+</html>

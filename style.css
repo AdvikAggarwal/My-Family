@@ -1,0 +1,64 @@
+body
+{
+    background: linear-gradient(to bottom left, rgba(255, 166, 0, 0.503), rgba(255, 166, 0, 0.503), rgba(255, 0, 0, 0.503), rgb(255, 192, 203), rgb(255, 192, 203), rgba(243, 104, 104, 0.733), rgba(165, 42, 42, 0.815));
+}
+.heading
+{
+    text-align: center;
+    background: rgba(245, 245, 245, 0.616);
+    height: max-content;
+}
+#description
+{
+    font-family: 'Twinkle Star', cursive;
+    font-size: 50px;
+}
+.names
+{
+    font-family: 'Passions Conflict', cursive;
+    font-size: 50px;
+}
+.boxes
+{
+    border: 1px ridge black;
+    height: 180px;
+    width: 240px;
+}
+.boxes_text
+{
+    font-family: 'Peralta', cursive;
+}
+.results
+{
+    font-family: cursive;
+    text-align: left;
+    width: fit-content;
+}
+#button1, #button2
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+#button1
+{
+    background: linear-gradient(to bottom right, #1E9600, #FFF200, #FF0000);
+}
+#button2
+{
+    background: linear-gradient(to bottom right, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+}
+.copyright_footer
+{
+    position: fixed;
+    color: #6c757d;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgba(245, 245, 245, 0.873);
+    line-height: 3;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(255, 128, 0);
+}
